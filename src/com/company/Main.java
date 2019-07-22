@@ -3,6 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
+
         Dog d1 = new Dog();
         d1.setAge(2);
         d1.setColor(Color.BLACK);
@@ -11,11 +12,9 @@ public class Main {
         d1.setBreed("Пудель");
         d1.setCommand(new String[]{"Сидеть", "Лежать"});
 
-
-        Shelter shelter = new Shelter("Питомник", "Чуй 71");
-        Dog d2 = new Dog("Тайфун", "Хаски", Color.WHITE, shelter, new String[]{"Лежать,Замиреть,Дай лапу"});
+        Dog d2 = new Dog(Color.WHITE, new Shelter("Питомник", "Исанова 28"), "Тайфун", "Хаски", new String[]{"Лежать,кувырок"});
         d2.setAge(3);
-        Dog d3 = new Dog("Мухтар", "Овчарка", Color.BROWN, shelter, new String[]{"След", "Фас", "Голос"});
+        Dog d3 = new Dog(Color.BROWN, new Shelter("Дом Животных", "Гагарина 167"), "Мухтар", "Овчарка", new String[]{"След", "Фас", "Голос"});
         d3.setAge(5);
         System.out.println(d1.getInfo());
         d1.makeVoice();

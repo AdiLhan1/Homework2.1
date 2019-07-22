@@ -11,6 +11,8 @@ public final class Dog extends Pet {
         return name;
     }
 
+
+
     public void setName(String name) {
         this.name = name;
     }
@@ -36,18 +38,16 @@ public final class Dog extends Pet {
     }
 
     public Dog(String name, String breed, Color color, Shelter shelter) {
-        super.setColor(color);
-        super.setShelter(shelter);
+        super(color,shelter);
         this.breed = breed;
         this.name = name;
     }
 
-    public Dog(String name, String breed, Color color, Shelter shelter, String[] command) {
+    public Dog(Color color, Shelter shelter, String name, String breed, String[] command) {
+        super(color, shelter);
         this.name = name;
-        this.command = command;
         this.breed = breed;
-        super.setColor(color);
-        super.setShelter(shelter);
+        this.command = command;
     }
 
     public void makeVoice() {

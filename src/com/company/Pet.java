@@ -11,6 +11,14 @@ public class Pet {
         return age;
     }
 
+    public Pet() {
+    }
+
+    public Pet(Color color, Shelter shelter) {
+        this.color = color;
+        this.shelter = shelter;
+    }
+
     public void setAge(int age) {
         this.age = age;
     }

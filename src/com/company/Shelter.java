@@ -1,8 +1,8 @@
 package com.company;
 
 public class Shelter {
-    String name;
-    String address;
+   private String name;
+   private String address;
 
     public Shelter(String name, String address) {
         this.name = name;
